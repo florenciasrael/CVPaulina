@@ -5,7 +5,13 @@ html{
     scroll-behavior: smooth;
 }
 
-
+body {
+    background-image: url("bordes.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;
+}
 .header {
     display: flex;
     width: 100%;
@@ -58,6 +64,7 @@ section {
         width: 100%;
         border-radius: 50%;
         margin-left: 10%;
+        box-shadow: 0 0 15px rgb(235, 30, 30)
     }
     .textos {
         width: 50%;
