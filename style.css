@@ -18,12 +18,15 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
 }
     .header nav {
         display: flex;
         font-size: 150%;
-        width: 80%;
+        width: 60%;
+        background-color:rgba(235, 30, 30, 0.432) ;
         justify-content: center;
+        text-decoration: none;
     }
         .header nav a:nth-child(3) {
             color: #E4405F;
@@ -38,11 +41,17 @@ body {
             padding: 1%;
         }
         .header nav a:nth-child(1) {
-            
+            text-decoration: none;
+            color: white;
             padding: 1%;
         }
         .header nav a:nth-child(2) {
             padding: 1%;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            background-color:rgba(235, 30, 30, 0.726) ;
         }
 
 section {
@@ -86,6 +95,10 @@ section {
         .programas {
             width: 50%;
         }
+            .textoprogramas p {
+                text-decoration: none;
+            }
+            
     
 .parte3 {
     display: flex;
@@ -104,18 +117,25 @@ section {
         justify-content: center;
         }
 
-    .seccion img {
+    .seccion iframe {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        width: 28%;
+        margin: 2%;
     }
+    
     .seccion a {
         width: 25%;
         margin: 3%;
     }
     
-
-
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(221, 54, 54, 0.596);
+}
+    
 
 /*medianos --> + de 580px y - de 989px*/
 @media (min-width: 580px) and (max-width: 989px) {
@@ -154,7 +174,7 @@ section {
             justify-content: center;
             }
     
-        .seccion img {
+        .seccion iframe {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
@@ -165,7 +185,7 @@ section {
         }
      
    }
-
+   
 
 /*pequeños --> hasta 580px */
 @media (max-width: 579px) {
@@ -248,7 +268,7 @@ section {
             justify-content: center;
             }
     
-        .seccion img {
+        .seccion iframe {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
@@ -258,3 +278,6 @@ section {
             margin: 3%;
         }
    }
+    .footer p {
+        font-size: 60%;
+    }
